@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nodehelloworld.example.com
+ labels:
+ app: helloworld
+spec:
+ containers:
+ - name: k8s-demo
+ image: wardviaene/k8s-demo
+ ports:
+ - containerPort: 3000
+ nodeSelector: 
+ hardware: high-spec
+ 
+ 
+#First step, add a label or multiple labels to your nodes:
+#$ kubectl label nodes node1 hardware=high-spec
+#$ kubectl label nodes node2 hardware=low-spe
