@@ -5,6 +5,7 @@ metadata:
 spec:
   ports:
   - port: 80
+  #- port: 31000  #any port
     targetPort: nodejs-port
     protocol: TCP
   selector:
