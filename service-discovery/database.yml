@@ -11,6 +11,8 @@ spec:
     ports:
     - name: mysql-port
       containerPort: 3306
+  # for env var 
+  # https://hub.docker.com/_/mysql
     env:
       - name: MYSQL_ROOT_PASSWORD
         valueFrom:
