@@ -1,3 +1,7 @@
+#pod1 and 2 should be on same node and 
+#pod1 and pod3 should be on different node
+#pod4 should be not on pod1 and pod3
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
